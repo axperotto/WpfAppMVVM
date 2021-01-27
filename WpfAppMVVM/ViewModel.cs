@@ -23,6 +23,9 @@ namespace WpfAppMVVM
             get { return _personList; }
             set { _personList = value; }
         }
+
+
+
         private ICommand mUpdater;
         public ICommand UpdateCommand
         {

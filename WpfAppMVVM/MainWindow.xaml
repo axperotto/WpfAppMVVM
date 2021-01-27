@@ -30,9 +30,8 @@
            </TextBox>  
        </Grid>  
        <Button x:Name="btnUpdate" Width="100" Height="20" HorizontalAlignment="Center" Grid.Row="1" Content="Update"  
-               Command="{Binding Path=UpdateCommand}" CommandParameter="{Binding ElementName=lstPerson, Path=SelectedItem.Address}"></Button>  
+               Command="{Binding Path=UpdateCommand}" CommandParameter="{Binding ElementName=lstPerson, Path=SelectedItem}"></Button>  
        <ListView x:Name="lstPerson" Grid.Row="2" ItemsSource="{Binding Persons}">  
-  
            <ListView.View>  
                 <GridView>
                     <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" />

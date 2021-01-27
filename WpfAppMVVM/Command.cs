@@ -13,7 +13,7 @@ namespace WpfAppMVVM
 
         public bool CanExecute(object parameter)
         {
-            return true;
+            return false;
         }
         public event EventHandler CanExecuteChanged
         {
@@ -23,7 +23,7 @@ namespace WpfAppMVVM
 
         public void Execute(object parameter)
         {
-            //Your Code  
+
         }
         #endregion
     }
